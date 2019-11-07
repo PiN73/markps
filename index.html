@@ -1,0 +1,111 @@
+<style>
+body {
+  font-family: sans-serif;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  vertical-align: top;
+}
+pre {
+  margin: 0;
+}
+
+ul {
+  padding-left: 16px;
+}
+</style>
+
+<table>
+
+<tr>
+<th>Postscript-like</th>
+<th>Result</th>
+</tr>
+
+<tr>
+<td>
+<pre>
+"Hello world"
+[P]
+</pre>
+</td>
+<td>
+Hello world
+</td>
+</tr>
+
+<tr>
+<td>
+<pre>
+"normal text"
+[P]
+[I]
+"italic text"
+[P]
+</pre>
+</td>
+<td>
+normal text
+<br>
+<i>italic text</i>
+</td>
+</tr>
+
+<tr>
+<td>
+<pre>
+"normal text"
+[P]
+[I]
+"italic text"
+[P]
+[B]
+"bold italic text"
+[P]
+</pre>
+</td>
+<td>
+normal text
+<br>
+<i>italic text
+<br>
+<b>bold italic text</i></i>
+</td>
+</tr>
+
+<tr>
+<td>
+<pre>
+>>
+Item 1
+[P]
+Item 2
+[P]
+>>
+"Subitem a"
+[P]
+"Subitem 2"
+[P]
+<<
+"Item 3"
+[P]
+</pre>
+</td>
+<td>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<ul>
+<li>Subitem a</li>
+<li>Subitem b</li>
+</ul>
+<li>Item 3</li>
+</ul>
+</td>
+</tr>
+
+</table> 
